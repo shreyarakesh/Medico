@@ -1,0 +1,103 @@
+/* ==== Banner Container ==== */
+.banner {
+  display: flex;
+  flex-direction: column;
+  background-color: #00bfa6; /* Primary color */
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  margin: 5rem 0;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    flex-direction: row;
+    margin: 5rem 2.5rem;
+    padding: 4rem 3rem;
+  }
+}
+
+/* ==== Text Content ==== */
+.banner__content {
+  flex: 1;
+  padding: 2rem 0;
+  padding-left: 0.5rem;
+  color: white;
+}
+
+.banner__heading {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.banner__subheading {
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 640px) {
+  .banner__heading {
+    font-size: 2.2rem;
+  }
+  .banner__subheading {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner__heading {
+    font-size: 2.5rem;
+  }
+  .banner__subheading {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner__heading {
+    font-size: 3rem;
+  }
+}
+
+/* ==== Button ==== */
+.banner__button {
+  margin-top: 2rem;
+  background-color: white;
+  color: #595959;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease;
+}
+
+.banner__button:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
+}
+
+/* ==== Image Container ==== */
+.banner__image-wrapper {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .banner__image-wrapper {
+    display: block;
+    width: 50%;
+    max-width: 370px;
+  }
+}
+
+.banner__image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 370px;
+}
